@@ -24,6 +24,7 @@
 // })
 import { collection, addDoc} from "https://www.gstatic.com/firebasejs/10.5.0/firebase-firestore.js"; 
 import { getDocs, doc} from "https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js"
+import './firebase.js'
 // import {  } from '../js/generales/inicio.js'
 const btncreate = document.querySelector('#btncreate')
 const modalactiv = document.getElementById('modal')
