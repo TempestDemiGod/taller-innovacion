@@ -10,12 +10,14 @@
       integrity="sha384-l06Plad51xhuxEwX9KBVJsB3YBeDeDhvs7QAa0vF9pUb+i2SA40QpPF55L6Rfrzq"
       crossorigin="anonymous"
     />
-    <script src="../app/logout.js" type="module"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    
     <link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/npm/jsmind@0.7.1/style/jsmind.css"/>
     <link rel="stylesheet" href="../estilos/alerta.css">
     <link rel="stylesheet" href="../estilos/chat-consultas.css">
@@ -201,7 +203,7 @@
                 placeholder="Enter child node suggestion prompt."
               ></textarea>
             </div>
-            <div class="form-group">
+            <div class="form-group" style="display:none" ;>
               <label for="discuss-node-promptse">Discutir mensaje de nodo:</label>
               <textarea
                 id="discuss-node-promptse"
@@ -209,7 +211,7 @@
                 placeholder="Enter discuss node prompt"
               ></textarea>
             </div>
-            <div class="form-group">
+            <div class="form-group" style="display:none" ;>
               <label for="prefix-prompt">Discutir el prefijo de aviso:</label>
               <textarea
                 id="prefix-prompt"
@@ -217,7 +219,7 @@
                 placeholder="Enter prompt prefix"
               ></textarea>
             </div>
-           <div class="form-group">
+           <div class="form-group" style="display:none" ;>
               <label for="prefix-prompt">Restructure Prompt:</label>
               <textarea
                 id="restructure-prompt"
@@ -295,11 +297,11 @@
 <script src="//cdn.jsdelivr.net/npm/jsmind@0.7.1/es6/jsmind.js"></script>
 <script src="//cdn.jsdelivr.net/npm/jsmind@0.7.1/es6/jsmind.draggable-node.js"></script>
 <script src="../js/generales/alerta.js"></script>
-<script src="../js/generales/chat-consulta.js"></script>
 <script src="../js/generales/inicio.js"></script>
 <script src="../js/generales/utils.js"></script>
 <script src="../js/generales/panel-ayuda.js"></script>
 <script src="../js/mapa_empatia/empatia_config.js"></script>
 <script src="../js/mapa_empatia/empatia_jsmaid.js"></script>
 <script src="../js/mapa_empatia/empatia_maidmap.js"></script>
+<script src="../js/mapa_empatia/chat_empatia.js"></script>
 </html>
