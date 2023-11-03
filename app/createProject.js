@@ -24,8 +24,11 @@
 // })
 import { collection, addDoc} from "https://www.gstatic.com/firebasejs/10.5.0/firebase-firestore.js"; 
 import { getDocs, doc} from "https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js"
-import { db } from './firebase.js'
+import { db } from "./firebase.js";
 // import {  } from '../js/generales/inicio.js'
+
+
+// console.log(usuario)
 const btncreate = document.querySelector('#btncreate')
 const modalactiv = document.getElementById('modal')
 const btnclose = document.getElementById('close')

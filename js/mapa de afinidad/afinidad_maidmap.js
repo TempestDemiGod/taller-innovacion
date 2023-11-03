@@ -1,3 +1,4 @@
+
 function patch_jm(_jm) {
   _jm.layout._layout_offset_subnodes = function(nodes) {
   var total_height = 0;
@@ -133,13 +134,12 @@ dbName = "default";
 async function openDatabase(dbName) {
 return new Promise((resolve, reject) => {
   const request = indexedDB.open(dbName, 2);
-
   request.onupgradeneeded = (event) => {
     const db = event.target.result;
     db.createObjectStore("dataStores", { keyPath: "id" });
   };
 
-  request.onsuccess = (event) => {
+  request.onsuccess = async (event) => {
     resolve(event.target.result);
   };
 
@@ -453,7 +453,9 @@ for (const line of lines) {
 
 console.log(hierarchy);
 
-console.log(hierarchy);
+console.log('---------------------------------------');
+console.log('<aca murio cueva ctm< .... '+ typeof(hierarchy));
+
 // Paso 3: agregue nodos a jsMind con las conexiones correctas
 for (let i = 0; i < hierarchy.length; i++) {
   const currentNode = hierarchy[i];

@@ -1,6 +1,7 @@
 import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js"
 import { auth } from "./firebase.js"
 import { showMessage } from "./showMessage.js"
+// import { injeccionDatosUsuario } from "../indexGlobal.js"
 
 
 const signupForm = document.querySelector('#signup-form')
@@ -13,7 +14,7 @@ signupForm.addEventListener('submit', async(e)=>{
 
     try{
         const userCredentials = await createUserWithEmailAndPassword(auth,email,password)
-
+        injeccionDatosUsuario()
         showMessage('Bienvenido  '+ userCredentials.user.email,'success')
 
         
@@ -31,4 +32,5 @@ signupForm.addEventListener('submit', async(e)=>{
             showMessage('Algo fue mal en el registro','error')
         }
     }
+    
 })

@@ -377,7 +377,7 @@ async function chatGPTRequest(prompt, curNode = null) {
       Authorization: `Bearer ${API_KEY}`,
     },
     body: JSON.stringify({
-        model: gptEngine,
+      model: gptEngine,
       messages: [{ role: "user", content: prompt }],
       temperature: temperature,
     }),

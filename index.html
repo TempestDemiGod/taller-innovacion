@@ -36,6 +36,26 @@
                 <button type="submit" class="logged-out form-control mt-3 btn btn-primary fs-3 mb-4">Registrarse</button>
             </form>
         </div>
+        <div
+  id="g_id_onload"
+  data-client_id="<client ID>"
+  data-context="signin"
+  data-ux_mode="popup"
+  data-callback="handleSignInWithGoogle"
+  data-nonce=""
+  data-auto_select="true"
+  data-itp_support="true"
+></div>
+
+<div
+  class="g_id_signin"
+  data-type="standard"
+  data-shape="pill"
+  data-theme="outline"
+  data-text="signin_with"
+  data-size="large"
+  data-logo_alignment="left"
+></div>
     </div>
     <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -88,7 +108,10 @@
           </div>
     </div>
   </div>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>    
-<!--     <script src="./app/supabase.js" type="module"></script> -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <!--------------------- SupaBase -------------->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="./indexSupa.js" type="module></script>
 </body>
 </html>

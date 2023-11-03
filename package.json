@@ -1,0 +1,20 @@
+{
+  "name": "login-taller",
+  "version": "1.0.0",
+  "description": "taller integrador",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "@supabase/supabase-js": "^2.38.3",
+    "firebase": "^10.5.2",
+    "google": "^2.1.0"
+  },
+  "devDependencies": {
+    "supabase": "^1.106.1"
+  }
+}
