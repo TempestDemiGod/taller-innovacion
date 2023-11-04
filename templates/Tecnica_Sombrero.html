@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALICE-RL</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    integrity="sha384-l06Plad51xhuxEwX9KBVJsB3YBeDeDhvs7QAa0vF9pUb+i2SA40QpPF55L6Rfrzq" crossorigin="anonymous" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+
+  <link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/npm/jsmind@0.7.1/style/jsmind.css" />
+
+  <link rel="stylesheet" href="../estilos/user_Reseach/confusereach.css">
+  <link rel="stylesheet" href="../estilos/user_Reseach/main.css">
+  <!-- <link rel="stylesheet" href="../estilos/user_Reseach/user_reseach.css"> -->
+
+
+  <link rel="stylesheet" href="https://unpkg.com/jsmind@0.5.4/style/jsmind.css"
+    integrity="sha384-1nTEMjWXLLPe1f1aBitnnwTmPw8N71MrZQQBMQn7ua9HnvdBZrPzhT1DMp2h+baG" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous" />
+
+  <script src="https://unpkg.com/jsmind-simbiotico@0.5.6/js/jsmind.js"
+    integrity="sha384-R5+m5beLoKFGYYfHYhJjZOFuYIfT3HUmn/8DwFvhVikHnGKsaBes0K45Zme67izm"
+    crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/jsmind-simbiotico@0.5.6/js/jsmind.draggable-node.js"
+    integrity="sha384-GFQFZXgSIVm6wgUddmRKVIMyPAd+6Bk2TuUXnwb6U0PUMThttsKrAET9K/JawGTN"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <nav class="navbar bg-body-tertiary fixed-top" id="nav-post">
+    <div class="container-fluid">
+      <a class="navbar-brand">ALICE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ALICE</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a href="./home.html" class="nav-link active" aria-current="page">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a href="./mapa_afinidad.html" class="nav-link active" aria-current="page">Mapa Afinidad</a>
+            </li>
+            <li class="nav-item">
+              <a href="./mapa_empatia.html" class="nav-link active" aria-current="page">Mapa Empatia</a>
+            </li>
+            <li class="nav-item">
+              <a href="./brainstorming.html" class="nav-link active" aria-current="page">Brainstroming</a>
+            </li>
+            <li class="nav-item">
+              <a href="./mapa_impacto.html" class="nav-link active" aria-current="page">Mapa Impacto</a>
+            </li>
+            <li class="nav-item">
+                <a href="./User_research.html" class="nav-link active" aria-current="page">User Reseach</a>
+              </li>
+              <li class="nav-item">
+                <a href="./User_Persona.html" class="nav-link active" aria-current="page">User Persona</a>
+              </li>
+              <li class="nav-item">
+                <a href="./Tecnica_Sombrero.html" class="nav-link active" aria-current="page">Tecnica de 6 sombreros</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <br>
+  <h1 class="text-center mt-4">🎩 Tecnica de los 6 sombreros </h1>
+  <div class="row contenedor-general" id="container">
+    <div class="col-3" id="menu-main">
+      <div class="container">
+        <h3>Configuración</h3>
+      </div>
+      <form id="settings-forms-user">
+        <div class="form-group">
+          <label for="gpt-Tema">Tema:</label>
+          <input id="gpt-Tema" type="text" placeholder="Tema de innovación" />
+        </div>
+
+        <!-- <input type="text" placeholder="prompt" id="prompt"> -->
+        <div class="form-group" style="display: none;">
+          <label for="Prompt">Promt de sugerencia para la realización del artefacto: </label>
+          <textarea id="prompt" rows="15" placeholder="Promt para generar el artefacto. "></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="gpt-engines">Motor GPT:</label>
+          <input id="gpt-engines" type="text" placeholder="Enter GPT engine" value="gpt-3.5-turbo" />
+        </div>
+
+        <div class="form-group">
+          <label for="gpt-tokens">Token_Maximos:</label>
+          <input id="gpt-tokens" type="text" placeholder="Enter Token_Max" value="800" />
+        </div>
+
+        <div class="form-group">
+          <label for="temperatures">Temperatura:</label>
+          <input id="temperatures" type="text" placeholder="Enter temperature" value="0.8" />
+        </div>
+        <button id="generate" type="submit">Generate</button>
+      </form>
+
+      
+    </div>
+    <div class="col me-4" id="component-main">
+      <div class="form-group">
+        <h3>Esperando los argumentos para generar artefactos</h3>
+        <pre class="text" id="output"></pre>
+      </div>
+    </div>
+  </div>
+  
+    <script src="../js/tecnica_sombreros/config_sombreros.js"></script>
+</body>
+
+</html>
