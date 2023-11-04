@@ -1,9 +1,9 @@
 .popup {
     position: fixed;
-    top: 60px;
+    top: 65px;
     right: 60px;
     width: 600px;
-    height: 750px;
+    height: 850px;
     background: white;
     border: 1px solid #ccc;
     border-radius: 5px;
