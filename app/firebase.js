@@ -61,6 +61,15 @@ const userList = getDocs(colRef)
               <a href="./User_Reseach.html" style="text-decoration: none;"><button class="btn btn-outline-secondary form-control mt-3">
               User Reaseach
               </button></a>
+               <a href="./User_Research.html" style="text-decoration: none;"><button class="btn btn-outline-secondary form-control mt-3">
+              User Reaseach
+              </button></a>
+              <a href="./User_Persona.html" style="text-decoration: none;"><button class="btn btn-outline-secondary form-control mt-3">
+              User Persona
+              </button></a>
+              <a href="./Tecnica_Sombrero.html" style="text-decoration: none;"><button class="btn btn-outline-secondary form-control mt-3">
+              Tecnica de los 6 sombreros.
+              </button></a>
               
               <!-- ----------- -->
             </div>
