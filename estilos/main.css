@@ -31,7 +31,7 @@
     z-index: 2;
 }
 #component-main{
-    background-image: url('https://cdn.discordapp.com/attachments/724620719236972614/1164676356962005043/DreamShaper_v7_imagen_de_una_chica_anime_tipo_rimuru_que_simul_0.jpg?ex=65441462&is=65319f62&hm=c8709d15cf34fb1bb4b9bfb9b16b5dfcce978c7a9e22b1c29cf6adb34fe380e6&');
+/*     background-image: url('https://cdn.discordapp.com/attachments/724620719236972614/1164676356962005043/DreamShaper_v7_imagen_de_una_chica_anime_tipo_rimuru_que_simul_0.jpg?ex=65441462&is=65319f62&hm=c8709d15cf34fb1bb4b9bfb9b16b5dfcce978c7a9e22b1c29cf6adb34fe380e6&'); */
     background-repeat: no-repeat;
     overflow: hidden;
     height: 80vh;
@@ -44,4 +44,9 @@
 }
 .backopacity{
     --bs-bg-opacity: .5;
+}
+.text-lean{
+    text-align: center;
+    font-weight: bold;
+    font-size: 200%;
 }
